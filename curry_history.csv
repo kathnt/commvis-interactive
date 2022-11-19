@@ -1,0 +1,89 @@
+Year,Country,State,Exist From,Years of Existence
+1400,India,New,1400,0
+1450,India,Exist,1400,50
+1500,India,Exist,1400,100
+1550,India,Exist,1400,150
+1600,India,Exist,1400,200
+1650,India,Exist,1400,250
+1700,India,Exist,1400,300
+1750,India,Exist,1400,350
+1800,India,Exist,1400,400
+1850,India,Exist,1400,450
+1900,India,Exist,1400,500
+1950,India,Exist,1400,550
+2000,India,Exist,1400,600
+1500,Pakistan,New,1500,0
+1550,Pakistan,Exist,1500,50
+1600,Pakistan,Exist,1500,100
+1650,Pakistan,Exist,1500,150
+1700,Pakistan,Exist,1500,200
+1750,Pakistan,Exist,1500,250
+1800,Pakistan,Exist,1500,300
+1850,Pakistan,Exist,1500,350
+1900,Pakistan,Exist,1500,400
+1950,Pakistan,Exist,1500,450
+2000,Pakistan,Exist,1500,500
+1500,Bangladesh,New,1500,0
+1550,Bangladesh,Exist,1500,50
+1600,Bangladesh,Exist,1500,100
+1650,Bangladesh,Exist,1500,150
+1700,Bangladesh,Exist,1500,200
+1750,Bangladesh,Exist,1500,250
+1800,Bangladesh,Exist,1500,300
+1850,Bangladesh,Exist,1500,350
+1900,Bangladesh,Exist,1500,400
+1950,Bangladesh,Exist,1500,450
+2000,Bangladesh,Exist,1500,500
+1600,Myanmar,New,1600,0
+1650,Myanmar,Exist,1600,50
+1700,Myanmar,Exist,1600,100
+1750,Myanmar,Exist,1600,150
+1800,Myanmar,Exist,1600,200
+1850,Myanmar,Exist,1600,250
+1900,Myanmar,Exist,1600,300
+1950,Myanmar,Exist,1600,350
+2000,Myanmar,Exist,1600,400
+1550,Thailand,New,1550,0
+1600,Thailand,Exist,1550,50
+1650,Thailand,Exist,1550,100
+1700,Thailand,Exist,1550,150
+1750,Thailand,Exist,1550,200
+1800,Thailand,Exist,1550,250
+1850,Thailand,Exist,1550,300
+1900,Thailand,Exist,1550,350
+1950,Thailand,Exist,1550,400
+2000,Thailand,Exist,1550,450
+1500,Sri Lanka,New,1500,0
+1550,Sri Lanka,Exist,1500,50
+1600,Sri Lanka,Exist,1500,100
+1650,Sri Lanka,Exist,1500,150
+1700,Sri Lanka,Exist,1500,200
+1750,Sri Lanka,Exist,1500,250
+1800,Sri Lanka,Exist,1500,300
+1850,Sri Lanka,Exist,1500,350
+1900,Sri Lanka,Exist,1500,400
+1950,Sri Lanka,Exist,1500,450
+2000,Sri Lanka,Exist,1500,500
+1600,Indonesia,New,1600,0
+1650,Indonesia,Exist,1600,50
+1700,Indonesia,Exist,1600,100
+1750,Indonesia,Exist,1600,150
+1800,Indonesia,Exist,1600,200
+1850,Indonesia,Exist,1600,250
+1900,Indonesia,Exist,1600,300
+1950,Indonesia,Exist,1600,350
+2000,Indonesia,Exist,1600,400
+1850,Vietnam,New,1850,0
+1900,Vietnam,Exist,1850,50
+1950,Vietnam,Exist,1850,100
+2000,Vietnam,Exist,1850,150
+1850,Japan,New,1850,0
+1900,Japan,Exist,1850,50
+1950,Japan,Exist,1850,100
+2000,Japan,Exist,1850,150
+1900,Singapore,New,1900,0
+1950,Singapore,Exist,1900,50
+2000,Singapore,Exist,1900,100
+1900,South Africa,New,1900,0
+1950,South Africa,Exist,1900,50
+2000,South Africa,Exist,1900,100
