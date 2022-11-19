@@ -1,0 +1,5 @@
+altair 
+plotly.express 
+pandas
+streamlit 
+numpy 
