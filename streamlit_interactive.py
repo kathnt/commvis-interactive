@@ -1,5 +1,4 @@
-# Katsumi Ibraki
-# si649f22 interactive vis
+
 
 # imports we will use
 import altair as alt
