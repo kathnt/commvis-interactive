@@ -152,47 +152,49 @@ def make_ing_chart(ing_name):
     temp_ing_chart
 
 ### Proteins (Vis 2)
-recipe_filtered = pd.read_csv('manual_cleaned.csv')
+new_recipe = pd.read_csv('new_recipes.csv')
 
-recipe_chicken = recipe_filtered[(recipe_filtered['NER'].str.contains("chicken")) | (recipe_filtered['title'].str.contains("chicken|Chicken"))]
-recipe_beef = recipe_filtered[(recipe_filtered['NER'].str.contains("beef")) | (recipe_filtered['title'].str.contains("beef|Beef"))]
-recipe_pork = recipe_filtered[(recipe_filtered['NER'].str.contains("pork")) | (recipe_filtered['title'].str.contains("pork|Pork"))]
-recipe_lamb = recipe_filtered[(recipe_filtered['NER'].str.contains("lamb|mutton")) | (recipe_filtered['title'].str.contains("lamb|Lamb|mutton|Mutton"))]
-recipe_shellfish = recipe_filtered[(recipe_filtered['NER'].str.contains("clam|mussel|oyster|scallop|shrimp|lobster|crayfish|crab")) | (recipe_filtered['title'].str.contains("clam|Clam|mussel|Mussel|oyster|Oyster|scallop|Scallop|shrimp|Shrimp|lobster|Lobster|crayfish|Crayfish|crab|Crab"))]
-recipe_fish = recipe_filtered[(recipe_filtered['NER'].str.contains("fish|tilapia|snapper|cod|mahi-mahi|halibut|basa|ling|tuna")) | (recipe_filtered['title'].str.contains("fish|Fish|tilapia|Tilapia|snapper|Snapper|cod|Cod|mahi-mahi|Mahi-mahi|halibut|Halibut|basa|Basa|ling|Ling|tuna|Tuna"))]
-
-recipe_bean = recipe_filtered[(recipe_filtered['NER'].str.contains("tempeh|bean|tofu")) | (recipe_filtered['title'].str.contains("tempeh|Tempeh|bean|Bean|Tofu|tofu"))]
-recipe_egg = recipe_filtered[(recipe_filtered['NER'].str.contains("egg")) | (recipe_filtered['title'].str.contains("egg|Egg"))]
-recipe_vegan = recipe_filtered[(recipe_filtered['title'].str.contains("vege|Vege"))]
-
-recipe_chicken.insert(7,'Protein','Chicken')
-recipe_chicken.insert(8,'Protein Group','Meat')
-
-recipe_beef.insert(7,'Protein','Beef')
-recipe_beef.insert(8,'Protein Group','Meat')
-
-recipe_pork.insert(7,'Protein','Pork')
-recipe_pork.insert(8,'Protein Group','Meat')
-
-recipe_lamb.insert(7,'Protein','Lamb')
-recipe_lamb.insert(8,'Protein Group','Meat')
-
-recipe_shellfish.insert(7,'Protein','Shellfish')
-recipe_shellfish.insert(8,'Protein Group','Seafood')
-
-recipe_fish.insert(7,'Protein','Fish')
-recipe_fish.insert(8,'Protein Group','Seafood')
-
-recipe_bean.insert(7,'Protein','Bean')
-recipe_bean.insert(8,'Protein Group','Vegetarian')
-
-recipe_egg.insert(7,'Protein','Egg')
-recipe_egg.insert(8,'Protein Group','Vegetarian')
-
-recipe_vegan.insert(7,'Protein','Vegan')
-recipe_vegan.insert(8,'Protein Group','Vegetarian')
-
-new_recipe = pd.concat([recipe_chicken, recipe_beef, recipe_pork, recipe_lamb, recipe_shellfish, recipe_fish, recipe_bean, recipe_egg, recipe_vegan])
+#recipe_chicken = recipe_filtered[(recipe_filtered['NER'].str.contains("chicken")) | (recipe_filtered['title'].str.contains("chicken|Chicken"))]
+#recipe_beef = recipe_filtered[(recipe_filtered['NER'].str.contains("beef")) | (recipe_filtered['title'].str.contains("beef|Beef"))]
+#recipe_pork = recipe_filtered[(recipe_filtered['NER'].str.contains("pork")) | (recipe_filtered['title'].str.contains("pork|Pork"))]
+#recipe_lamb = recipe_filtered[(recipe_filtered['NER'].str.contains("lamb|mutton")) | (recipe_filtered['title'].str.contains("lamb|Lamb|mutton|Mutton"))]
+#recipe_shellfish = recipe_filtered[(recipe_filtered['NER'].str.contains("clam|mussel|oyster|scallop|shrimp|lobster|crayfish|crab")) | (recipe_filtered['title'].str.contains("clam|Clam|mussel|Mussel|oyster|Oyster|scallop|Scallop|shrimp|Shrimp|lobster|Lobster|crayfish|Crayfish|crab|Crab"))]
+#recipe_fish = recipe_filtered[(recipe_filtered['NER'].str.contains("fish|tilapia|snapper|cod|mahi-mahi|halibut|basa|ling|tuna")) | (recipe_filtered['title'].str.contains("fish|Fish|tilapia|Tilapia|snapper|Snapper|cod|Cod|mahi-mahi|Mahi-mahi|halibut|Halibut|basa|Basa|ling|Ling|tuna|Tuna"))]
+#
+#recipe_bean = recipe_filtered[(recipe_filtered['NER'].str.contains("tempeh|bean|tofu")) | (recipe_filtered['title'].str.contains("tempeh|Tempeh|bean|Bean|Tofu|tofu"))]
+#recipe_egg = recipe_filtered[(recipe_filtered['NER'].str.contains("egg")) | (recipe_filtered['title'].str.contains("egg|Egg"))]
+#recipe_vegan = recipe_filtered[(recipe_filtered['title'].str.contains("vege|Vege"))]
+#
+#recipe_chicken.insert(7,'Protein','Chicken')
+#recipe_chicken.insert(8,'Protein Group','Meat')
+#
+#recipe_beef.insert(7,'Protein','Beef')
+#recipe_beef.insert(8,'Protein Group','Meat')
+#
+#recipe_pork.insert(7,'Protein','Pork')
+#recipe_pork.insert(8,'Protein Group','Meat')
+#
+#recipe_lamb.insert(7,'Protein','Lamb')
+#recipe_lamb.insert(8,'Protein Group','Meat')
+#
+#recipe_shellfish.insert(7,'Protein','Shellfish')
+#recipe_shellfish.insert(8,'Protein Group','Seafood')
+#
+#recipe_fish.insert(7,'Protein','Fish')
+#recipe_fish.insert(8,'Protein Group','Seafood')
+#
+#recipe_bean.insert(7,'Protein','Bean')
+#recipe_bean.insert(8,'Protein Group','Vegetarian')
+#
+#recipe_egg.insert(7,'Protein','Egg')
+#recipe_egg.insert(8,'Protein Group','Vegetarian')
+#
+#recipe_vegan.insert(7,'Protein','Vegan')
+#recipe_vegan.insert(8,'Protein Group','Vegetarian')
+#
+#new_recipe = pd.concat([recipe_chicken, recipe_beef, recipe_pork, recipe_lamb, recipe_shellfish, recipe_fish, recipe_bean, recipe_egg, recipe_vegan])
+#
+#new_recipe.to_csv('new_recipe.csv',index=False)
 
 def protein_theme():
     font = "Times"
