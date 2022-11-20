@@ -1,4 +1,5 @@
-
+# Katsumi Ibraki
+# si649f22 interactive vis
 
 # imports we will use
 import altair as alt
@@ -15,7 +16,7 @@ st.markdown('by Katsumi Ibaraki')
 
 ### Variations (Vis 1)
 recipe = pd.read_csv('recipe_copy.csv')
-df_melt = recipe.melt(id_vars=['Unnamed: 0', 'title', 'ingredients', 'directions', 'link', 'source', 'NER', 'Country', 'Distance'])
+df_melt = recipe.melt(id_vars=['title', 'NER', 'Country', 'Distance'])
 
 dropdown_options = ['garlic',
  'salt',
